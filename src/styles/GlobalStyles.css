@@ -10,7 +10,7 @@ main {
 
 @media (min-width: 920px) {
   body {
-    background-image: url('/images/body-shape.svg'), url('/images/bg.jpg');
+    background-image: url('/src/assets/images/body-shape.svg'), url('/src/assets/images/bg.jpg');
     background-repeat: no-repeat, repeat-x;
     background-position: right top;
   }

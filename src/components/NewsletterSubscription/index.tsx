@@ -1,5 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from 'react';
 import { Container, Content, Form, FormContent, TextContent } from './styles';
+import { sendConfirmationEmail } from '../../services/Newsletter';
 
 interface FormProps {
   email: string;
@@ -41,7 +42,13 @@ export function NewsletterSubscription() {
     event?.preventDefault();
 
     if (isValid()) {
-      alert(`Obrigado pela sua assinatura, você receberá nossas novidades no e-mail: ${values.email}`);
+      sendConfirmationEmail(values.email)
+        .then(() => {
+          alert(`Obrigado pela sua assinatura, você receberá nossas novidades no e-mail: ${values.email}`);
+        })
+        .catch(() => {
+          console.log('Não foi possível enviar o email');
+        });
     }
   };
 

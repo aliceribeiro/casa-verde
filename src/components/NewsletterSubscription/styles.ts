@@ -22,7 +22,7 @@ export const Content = styled.div`
       display: block;
       width: 787px;
       height: 975px;
-      background-image: url('/src/assets/images/hero-image.png');
+      background-image: url('/images/hero-image.png');
       position: absolute;
       --baseDistance: -287px;
       top: calc(var(--baseDistance) + 50px);
@@ -102,7 +102,7 @@ export const FormContent = styled.div`
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
-    background-image: url('/src/assets/icons/mail.svg');
+    background-image: url('/icons/mail.svg');
     background-repeat: no-repeat;
     background-position: 16px center;
     outline-color: #ffcb47;

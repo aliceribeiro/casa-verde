@@ -4,7 +4,7 @@ export function Menu() {
   return (
     <Header>
       <div>
-        <img src="/src/assets/images/logo-full.svg" alt="Casa Verde logo" />
+        <img src="/images/logo-full.svg" alt="Casa Verde logo" />
       </div>
 
       <NavMenu>
